@@ -1,10 +1,10 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import imgLogo from "../../assets/All Images/CareerHub.png"
+import imgLogo from "../../assets/All Images/CareerHub.png";
 
 const Header = () => {
   return (
-    <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+    <div >
       <div className="relative flex items-center justify-between">
         <Link
           to="/"
@@ -32,12 +32,25 @@ const Header = () => {
               </NavLink>
             </li>
             <li>Statistics</li>
-            <li>Applied Jobs</li>
+            <li>
+              <NavLink
+                to="/appliedJobs"
+                aria-label="appliedJobs"
+                title="appliedJobs"
+                className={({ isActive }) => (isActive ? "active" : "default")}
+              >
+                Applied Jobs
+              </NavLink>
+            </li>
             <li>Blog</li>
           </ul>
         </div>
         <div>
-          <button>Star Applying</button>
+          
+            <button type="button" className="btn-primary">
+              Start Applying
+            </button>
+          
         </div>
       </div>
     </div>
