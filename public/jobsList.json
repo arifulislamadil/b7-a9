@@ -16,6 +16,7 @@
     "phone": "555-123-4567",
     "email": "jobs@example.com",
     "address": "123 Main Street, Anytown USA"
+    ,"viewDetails":"view details"
   },
   {
     "id": 2,
@@ -32,6 +33,7 @@
     "phone": "555-234-5678",
     "email": "jobs@acmecorp.com",
     "address": "456 Market Street, San Francisco, CA"
+    ,"viewDetails":"view details"
   },
   {
     "id": 3,
@@ -48,6 +50,7 @@
     "phone": "555-345-6789",
     "email": "jobs@xyzaccounting.com",
     "address": "789 Main Street, New York, NY"
+    ,"viewDetails":"view details"
   },
   {
     "id": 4,
@@ -64,6 +67,7 @@
     "phone": "555-123-4567",
     "email": "jobs@abccorp.com",
     "address": "123 Main Street, Anytown USA"
+    ,"viewDetails":"view details"
   },
   {
     "id": 5,
@@ -80,6 +84,7 @@
     "phone": "555-234-5678",
     "email": "jobs@xyzinc.com",
     "address": "456 Market Street, San Francisco, CA"
+    ,"viewDetails":"view details"
   },
   {
     "id": 6,
@@ -96,6 +101,7 @@
     "phone": "555-345-6789",
     "email": "jobs@lmntech.com",
     "address": "789 Main Street, New York, NY"
+    ,"viewDetails":"view details"
   },
   {
     "id": 7,
@@ -112,6 +118,7 @@
     "phone": "555-123-4567",
     "email": "jobs@abccorp.com",
     "address": "123 Main Street, Anytown USA"
+    ,"viewDetails":"view details"
   },
   {
     "id": 8,
@@ -128,6 +135,7 @@
     "phone": "555-234-5678",
     "email": "jobs@xyzinc.com",
     "address": "456 Market Street, San Francisco, CA"
+    ,"viewDetails":"view details"
   },
   {
     "id": 9,
@@ -144,5 +152,6 @@
     "phone": "555-345-6789",
     "email": "jobs@lmntech.com",
     "address": "789 Main Street, New York, NY"
+    ,"viewDetails":"view details"
   }
 ]

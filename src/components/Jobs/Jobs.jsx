@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useLoaderData } from "react-router-dom";
 import Job from "../Job/Job";
 import { addToDb } from "../../utils/fakeDb";
 
 const Jobs = () => {
   const jobs = useLoaderData();
+  const fourJobs = jobs.slice(0, 4);
+
   const handleJobDetails=(details)=>{
   
   }
@@ -12,6 +14,7 @@ const Jobs = () => {
   const handleAddToCart=(id)=>{
     addToDb(id)
   }
+  
   
   return (
     <div>
@@ -23,13 +26,13 @@ const Jobs = () => {
             need. Its your future
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-3 mt-6">
-          {jobs.map((job) => (
+        <div setCount='fourCard' className="grid grid-cols-1 gap-4 md:grid-cols-2 mt-6">
+          {fourJobs.map((job) => (
             <Job key={job.id} job={job} handleJobDetails={handleJobDetails}></Job>
           ))}
         </div>
         <Link className="text-center">
-        <div><button className="">See All Jobs</button></div>
+        <div><button  className="">See All Jobs</button></div>
         </Link>
       </div>
     </div>
