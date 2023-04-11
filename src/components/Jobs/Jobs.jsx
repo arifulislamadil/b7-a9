@@ -1,13 +1,18 @@
 import React from "react";
 import { Link, useLoaderData } from "react-router-dom";
 import Job from "../Job/Job";
+import { addToDb } from "../../utils/fakeDb";
 
 const Jobs = () => {
   const jobs = useLoaderData();
   const handleJobDetails=(details)=>{
-    console.log(details)
+  
   }
-  console.log(jobs);
+
+  const handleAddToCart=(id)=>{
+    addToDb(id)
+  }
+  
   return (
     <div>
       <div>
