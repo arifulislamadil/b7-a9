@@ -6,16 +6,13 @@ import { addToDb } from "../../utils/fakeDb";
 const Jobs = () => {
   const jobs = useLoaderData();
   const fourJobs = jobs.slice(0, 4);
+  const [showAll, setShowAll] = useState("");
+  const handleJobDetails = (details) => {};
 
-  const handleJobDetails=(details)=>{
-  
-  }
+  const handleAddToCart = (id) => {
+    addToDb(id);
+  };
 
-  const handleAddToCart=(id)=>{
-    addToDb(id)
-  }
-  
-  
   return (
     <div>
       <div>
@@ -26,15 +23,50 @@ const Jobs = () => {
             need. Its your future
           </p>
         </div>
-        <div setCount='fourCard' className="grid grid-cols-1 gap-4 md:grid-cols-2 mt-6">
+        {/* <div className="grid grid-cols-1 gap-4 md:grid-cols-2 mt-6">
           {fourJobs.map((job) => (
             <Job key={job.id} job={job} handleJobDetails={handleJobDetails}></Job>
           ))}
-        </div>
-        <Link className="text-center">
-        <div><button  className="">See All Jobs</button></div>
+        </div> */}
+        <Link onClick={() => setShowAll("show-all")} className="text-center">
+          <div>
+            <button className="">See All Jobs</button>
+          </div>
         </Link>
       </div>
+      {showAll === "show-all" ? (
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 mt-6">
+          {jobs.map((job) => (
+            <Job
+              key={job.id}
+              job={job}
+              handleJobDetails={handleJobDetails}
+            ></Job>
+          ))}
+        </div>
+      ) : (
+       <div>
+         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 mt-6">
+          {fourJobs.map((job) => (
+            <Job
+              key={job.id}
+              job={job}
+              handleJobDetails={handleJobDetails}
+            ></Job>
+          ))}
+          
+        </div>
+        <div className="text-center">
+            <Link
+              onClick={() => setShowAll("show-all")}
+              className="text-center"
+            >
+              <button className="btn-primary">See All Jobs</button>
+            </Link>
+          </div>
+       </div>
+        
+      )}
     </div>
   );
 };
