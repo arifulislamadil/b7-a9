@@ -1,10 +1,11 @@
 
+
 [
   {
     "id": 1,
     "title": "Web Developer",
-    "img": "https://i.ibb.co/YTSscDx/google-1-1-1.png",
-    "company": "Google",
+    "img": "https://i.ibb.co/Bt106TL/png-transparent-logo-amazon-com-brand-flipkart-others-text-orange-logo-thumbnail.png",
+    "company": "BMW LCC",
     "status": ["Remote","Full Time"],
     "location": "Anywhere",
     "salary": "$80,000 - $100,000",
@@ -19,8 +20,8 @@
   {
     "id": 2,
     "title": "Marketing Coordinator",
-    "img": "https://i.ibb.co/rZ1MMzj/airbnb.png",
-    "company": "Airbnb Corporation",
+    "img": "https://i.ibb.co/qd1LdKZ/swoosh-nike-logo-brand-top-png-favpng-n-WA1ghvtmqyb-Bhk3-W66-Yjezj-N.jpg",
+    "company": "Nike Corporation",
     "status": ["Onsite","Full Time"],
     "location": "San Francisco, CA",
     "salary": "$60,000 - $80,000",
@@ -35,8 +36,8 @@
   {
     "id": 3,
     "title": "Accountant",
-    "company": "NetFlex",
-    "img": "https://i.ibb.co/WxjSrBM/netflix-4-1.png",
+    "company": "Google",
+    "img": "https://i.ibb.co/Jv3xvS0/google-logo.png",
     "status": ["Full Time", "Onsite"],
     "location": "New York, NY",
     "salary": "$70,000 - $90,000",
@@ -51,8 +52,8 @@
   {
     "id": 4,
     "title": "Full Stack Developer",
-    "img": "https://i.ibb.co/7ypPMqZ/tesla-9-1.png",
-    "company": "Tesla LCC",
+    "img": "https://i.ibb.co/Nr4T0jW/visa-logo.png",
+    "company": "Visa LCC",
     "status": ["Remote","Full Time"],
     "location": "Anywhere",
     "salary": "$90,000 - $120,000",
@@ -99,8 +100,8 @@
   {
     "id": 7,
     "title": "Front-End Developer",
-    "img": "https://i.ibb.co/gD4xcNr/images-1.png",
-    "company": "ABC Corp",
+    "img": "https://i.ibb.co/3Nbq346/official-apple-logo-png.png",
+    "company": "Apple LCC",
     "status": ["Remote","Full Time"],
     "location": "Anywhere",
     "salary": "$80,000 - $100,000",
