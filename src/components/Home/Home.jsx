@@ -1,6 +1,7 @@
 import React from "react";
 import bannerImg from "../../assets/All Images/banner-img.png"
 import JobCategoryList from "../JobCategoryList/JobCategoryList";
+import Jobs from "../Jobs/Jobs";
 
 const Home = () => {
   return (
@@ -24,7 +25,7 @@ const Home = () => {
         </div>
       </div>
       <JobCategoryList/>
-      
+      <Jobs/>
     </div>
   );
 };

@@ -18,7 +18,7 @@ const JobCategoryList = () => {
       </div>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-4 mt-6">
         {lists.map((list) => (
-          <div className="p-6 rounded bg-gray-100 text-center">
+          <div key={list.id} className="p-6 rounded bg-gray-100 text-center">
             <img className="inline mt-2" src={list.icon} alt="" />
             <h3 className="mt-2">{list.title}</h3>
             <p className="mt-1">{list.jobs_available} Jobs Available</p>
