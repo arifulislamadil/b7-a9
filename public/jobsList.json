@@ -101,7 +101,7 @@
     "id": 7,
     "title": "Front-End Developer",
     "img": "https://i.ibb.co/3Nbq346/official-apple-logo-png.png",
-    "company": "Apple LCC",
+    "company": "Apple",
     "status": ["Remote","Full Time"],
     "location": "Anywhere",
     "salary": "$80,000 - $100,000",
@@ -116,7 +116,7 @@
   {
     "id": 8,
     "title": "Data Analyst",
-    "img": "https://i.ibb.co/bRkQWPb/images.jpg",
+    "img": "https://i.ibb.co/4sjsTdj/cd77e04d9fe1a4ac66a26693d05e02c4.jpg",
     "company": "XYZ Inc",
     "status": ["Full Time", "Onsite"],
     "location": "San Francisco, CA",
@@ -132,7 +132,7 @@
   {
     "id": 9,
     "title": "DevOps Engineer",
-    "img": "https://i.ibb.co/MkWbYJc/microsoft-logo.png",
+    "img": "https://i.ibb.co/XWFZBR4/images-2.png",
     "company": "LMN Tech",
     "status": ["Full Time", "Onsite"],
     "location": "New York, NY",
