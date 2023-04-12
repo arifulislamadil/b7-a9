@@ -8,6 +8,7 @@ import {
   faPhone,
   faVoicemail,
   faEnvelope,
+  faLocation,
 } from "@fortawesome/free-solid-svg-icons";
 import { addToDb } from "../../utils/fakeDb";
 
@@ -29,18 +30,19 @@ const handleAddToCart=(id)=>{
         Job Details
       </h1>
       <div className="flex flex-col md:flex-row mt-6 ">
-        <div className="mt-6 w-4/6">
-          <p>
-            <span className="font-bold">Job Description:</span>
+        <div className="mt-6 w-4/6 pr-0 md:pr-20">
+          <p className="mt-2">
+            <span className="font-bold ">Job Description:<br/></span>
             {job.description}
           </p>
-          <p>
-            <span className="font-bold">Job Responsibility:</span>
+          <p className="mt-2">
+            <span className="font-bold mt-4">Job Responsibility:<br/></span>
             {job.responsibilities}
           </p>
-          <p>Educational Requirements:{job.requirements}</p>
+          <p className="mt-2"><span className="font-bold mt-4">Requirements:<br/></span> {job.requirements}</p>
+          <p className="mt-2"><span className="font-bold mt-4">Experience :<br/></span> {job.experience} Years</p>
         </div>
-        <div className="border-2 bg-gray-100 p-12 w-2/6">
+        <div className="border-2 bg-gray-100 p-12 w-6/6 md:w-2/6 mt-20 md:mt-0">
           <h5 className="border-b-2 border-purple-400 pb-4">Job Details</h5>
           <div>
             <h3 className="text-md mt-2">
@@ -81,7 +83,7 @@ const handleAddToCart=(id)=>{
             <h3 className="mt-2">
               <FontAwesomeIcon
                 className="text-purple-400 mr-2"
-                icon={faEnvelope}
+                icon={faLocation}
               />
               <span className="font-bold">Address: </span>
               {job.address}

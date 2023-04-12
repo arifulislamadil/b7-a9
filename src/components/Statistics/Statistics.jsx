@@ -57,7 +57,7 @@ const data = [
     uv: 58,
     pv: 4300,
     amt: 2100,
-  }
+  },
 ];
 
 export default class Statistics extends PureComponent {
@@ -66,34 +66,37 @@ export default class Statistics extends PureComponent {
 
   render() {
     return (
-      <div className="mt-20">
-        <div style={{ width: "100%", height: 300 }}>
-          <ResponsiveContainer>
-            <AreaChart
-              data={data}
-              margin={{
-                top: 10,
-                right: 30,
-                left: 0,
-                bottom: 0,
-              }}
-            >
-              <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey="name" />
-              <YAxis />
-              <Tooltip />
-              <Area
-                type="monotone"
-                dataKey="uv"
-                stroke="#8884d8"
-                fill="#8884d8"
-              />
-            </AreaChart>
-            
-          </ResponsiveContainer>
-          
+      <div>
+        <h1 className="text-4xl text-center  mt-52 md:mt-20 font-bold">Statistics</h1>
+        <div className="mt-3">
+          <div style={{ width: "100%", height: 300 }}>
+            <ResponsiveContainer>
+              <AreaChart
+                data={data}
+                margin={{
+                  top: 10,
+                  right: 30,
+                  left: 0,
+                  bottom: 0,
+                }}
+              >
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="name" />
+                <YAxis />
+                <Tooltip />
+                <Area
+                  type="monotone"
+                  dataKey="uv"
+                  stroke="#8884d8"
+                  fill="#8884d8"
+                />
+              </AreaChart>
+            </ResponsiveContainer>
+          </div>
+          <h3 className="text-center text-xl text-purple-400">
+            My 7 Assignments Number
+          </h3>
         </div>
-        <h3 className="text-center text-xl text-purple-400">My 7 Assignments Number</h3>
       </div>
     );
   }

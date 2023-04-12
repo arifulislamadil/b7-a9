@@ -56,7 +56,7 @@ const Jobs = () => {
           ))}
           
         </div>
-        <div className="text-center">
+        <div className="text-center mt-6">
             <Link
               onClick={() => setShowAll("show-all")}
               className="text-center"

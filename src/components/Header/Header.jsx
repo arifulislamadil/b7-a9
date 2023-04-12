@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import imgLogo from "../../assets/All Images/CareerHub.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -94,8 +93,10 @@ const Header = () => {
               />
             </svg>
           </button>
+          <div >
           {isMenuOpen && (
-            <div className="absolute z-10 top-0 left-0 w-full">
+           <div>
+             <div className="absolute z-10 top-0 left-0 w-full">
               <div className="p-5 bg-white border rounded shadow-sm">
                 <div className="flex items-center justify-between mb-4">
                   <div>
@@ -150,7 +151,7 @@ const Header = () => {
                     </li>
                     <li>
                       <Link
-                        to="/"
+                        to="/statistics"
                         aria-label="statistics"
                         title="statistics"
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -171,7 +172,7 @@ const Header = () => {
                     </li>
                     <li>
                       <Link
-                        to="/"
+                        to="/blog"
                         aria-label="blog"
                         title="blog"
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -188,7 +189,9 @@ const Header = () => {
                 </nav>
               </div>
             </div>
+           </div>
           )}
+          </div>
         </div>
       </div>
     </div>

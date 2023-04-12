@@ -8,7 +8,7 @@ const JobCategoryList = () => {
       .then((data) => setLists(data.categories));
   }, []);
   return (
-    <div className="mt-6 ">
+    <div className="mt-6 py-10 md:py-20">
       <div className="text-center">
         <h3 className="text-3xl font-bold">Job Category List</h3>
         <p className="mt-4">

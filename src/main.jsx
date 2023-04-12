@@ -8,12 +8,14 @@ import AppliedJobs from './components/Applied-Jobs/AppliedJobs'
 import JobDetails from './components/jobDetails/JobDetails'
 import Statistics from './components/Statistics/Statistics'
 import Blog from './components/Blog/Blog'
+import ErrorPage from './components/ErrorPage'
 
 
 const router = createBrowserRouter([
   {
     path:"/",
     element:<App/>,
+    errorElement:<ErrorPage/>,
     children:[
       {
         path:"/",
