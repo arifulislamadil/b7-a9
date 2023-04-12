@@ -32,7 +32,17 @@ const Header = () => {
                 Home
               </NavLink>
             </li>
-            <li>Statistics</li>
+            <li>
+              <NavLink
+                to="/statistics"
+                aria-label="statistics"
+                title="statistics"
+                className={({ isActive }) => (isActive ? "active" : "default")}
+              >
+                Statistics
+              </NavLink>
+            </li>
+        
             <li>
               <NavLink
                 to="/appliedJobs"
@@ -43,7 +53,17 @@ const Header = () => {
                 Applied Jobs
               </NavLink>
             </li>
-            <li>Blog</li>
+            <li>
+              <NavLink
+                to="/blog"
+                aria-label="blog"
+                title="blog"
+                className={({ isActive }) => (isActive ? "active" : "default")}
+              >
+                Blog
+              </NavLink>
+            </li>
+            
           </ul>
         </div>
         <div>

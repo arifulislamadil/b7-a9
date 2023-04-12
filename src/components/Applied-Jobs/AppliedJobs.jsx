@@ -1,6 +1,6 @@
 import { key } from "localforage";
 import React, { useState } from "react";
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import { getStoredCart } from "../../utils/fakeDb";
 
 const AppliedJobs = () => {
@@ -36,7 +36,9 @@ const AppliedJobs = () => {
           <p>{cart.salary}</p>
           </div>
           <div>
-            <button className="btn-primary">{cart.viewDetails}</button>
+           <Link to={`/job/${cart.id}`}>
+           <button className="btn-primary">{cart.viewDetails}</button>
+           </Link>
           </div>
         </div>
       ))}
